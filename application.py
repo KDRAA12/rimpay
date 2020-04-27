@@ -65,7 +65,7 @@ def login():
         user=User.query.get(username.lower())
         if user==None:
             return render_template("login.html")
-        if hashing.check_value(user.password, password,salt= os.getenv("HASH_KEY")):
+        if hashing.check_value(user.password, password,salt="FNr17Nj6cuPGjahECDwo" ):
             login_user(user)
             return redirect('/admin')
 
