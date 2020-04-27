@@ -42,6 +42,8 @@ def load_user(user_id):
 
 app.config['SQLALCHEMY_DATABASE_URI']="postgres://dxwmauetirkoiw:651a9e88220600d6efa363350d0ad7913568ed265f9065d7ac23eee5496ca4a3@ec2-54-247-96-169.eu-west-1.compute.amazonaws.com:5432/d57bjg6fkpv8l3"
 app.config['SECRET_KEY']="DBDDRFLsg21brgh45FFg43vol"
+app.config['HASH_KEY']="FNr17Nj6cuPGjahECDwo"
+
 
 admin.add_view(myModelView(Versemment,db.session))
 admin.add_view(myModelView(Client,db.session))

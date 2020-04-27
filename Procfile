@@ -1,1 +1,1 @@
-web: gunicorn RimLines:application
+web: gunicorn application:app
